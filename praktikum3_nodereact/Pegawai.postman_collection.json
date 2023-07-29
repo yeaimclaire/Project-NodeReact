@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "742c1a20-d58c-476d-8ca8-f8e79a8b9fe3",
+		"name": "Pegawai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL Pegawai",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/pegawai",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pegawai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SEARCH by nip/nama/alamat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"keyword\" : \"ed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/pegawai",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pegawai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE pegawai",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nip\": \"112\",\r\n    \"nama\": \"eden\",\r\n    \"alamat\": \"bekasi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/pegawai/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pegawai",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE pegawai",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nip\": \"112\",\r\n    \"nama\": \"eden\",\r\n    \"alamat\": \"bekasi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/pegawai/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pegawai",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE pegawai",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/pegawai/112",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pegawai",
+						"112"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
